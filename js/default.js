@@ -62,11 +62,6 @@ $(function() {
 	}
 });
 
-/* MeanMenu */
-jQuery(document).ready(function () {
-    jQuery('nav#nav').meanmenu();
-});
-
 /* FlexSlider */
 jQuery(window).load(function(){
   jQuery('.flexslider').flexslider({
@@ -75,4 +70,9 @@ jQuery(window).load(function(){
     prevText: "‹",           
 	nextText: "›", 
   });
+});
+
+/* FlexSlider */
+jQuery(document).ready(function () {
+    jQuery('nav#nav').meanmenu();
 });
