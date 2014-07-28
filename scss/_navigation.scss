@@ -90,7 +90,7 @@ a {
 		@include breakpoint(tablet) {
 			float: left;
 			position: relative;
-			margin-left: 10px;
+			margin-left: 5px;
 			
 			a {
 				padding: 0 1em;
@@ -101,6 +101,9 @@ a {
 				text-transform: uppercase;
 				@include transition();
 			}
+		}
+		@include breakpoint(desktop) {
+			margin-left: 10px;
 		}
 		&:hover > a {
 			background: #f6f6f6;

@@ -491,7 +491,7 @@ a {
     #nav li {
       float: left;
       position: relative;
-      margin-left: 10px; }
+      margin-left: 5px; }
       #nav li a {
         padding: 0 1em;
         padding: 5px 10px 10px;
@@ -504,6 +504,9 @@ a {
         -ms-transition: all 0.2s ease-in-out;
         -o-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out; } }
+  @media all and (min-width: 980px) {
+    #nav li {
+      margin-left: 10px; } }
   #nav li:hover > a {
     background: #f6f6f6;
     color: #64827b; }
