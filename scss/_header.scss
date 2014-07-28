@@ -23,9 +23,9 @@
 			background: url(../images/header_logo.png) center center no-repeat;	
 			background-size: cover;
 			text-indent: -9999px;
-			@include box-shadow(0,0,15px,rgba(0,0,0,.2));
 			width: 92px;
 			height: 85px;
+			@include box-shadow(0,0,15px,rgba(0,0,0,.2));
 			
 			@include breakpoint(tablet) {
 				width: 184px;
@@ -45,8 +45,8 @@
 		display: block;
 		.search,
 		.home {
-			@include gradient(#6d7d79, $green);
 			padding: 3px 5px;
+			@include gradient(#6d7d79, $green);
 		}
 		
 		.search {
@@ -60,12 +60,12 @@
 				position: relative;
 				width: 70px;
 				top: -3px;
-				@include rounded(3px);
-				@include transition();
-				@include box-shadow(0,0,0,0);
 				height: 21px;
 				line-height: 15px;
 				font-size: 12px;
+				@include rounded(3px);
+				@include transition();
+				@include box-shadow(0,0,0,0);
 				
 				&:focus {
 					width: 150px;

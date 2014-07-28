@@ -127,6 +127,13 @@
 	.events {
 		tr {
 			margin: 5px 0;
+			&:first-child {
+				color: #fff;
+				text-transform: uppercase;
+				font-size: 16px;
+				font-family: $font-serif;
+				@include gradient( #6d7d79, #4a605a );
+			}
 			
 			&:nth-child(odd) {
 				background: #f3f3f3;
@@ -134,8 +141,12 @@
 			&:hover {
 				background: #ddece9;
 			}
+			td,
+			th {
+				padding: 3px 7px;
+				font-weight: normal;
+			}
 			td {
-				padding: 5px 7px;
 				vertical-align: top;
 				
 				a {
@@ -153,22 +164,6 @@
 					font-weight: bold;
 					width: 25%;
 				}
-			}
-		}
-	}
-	.events {
-		tr{
-			&:first-child {
-				@include gradient( #6d7d79, #4a605a );
-				color: #fff;
-				text-transform: uppercase;
-				font-size: 16px;
-				font-family: $font-serif;
-			}
-			td,
-			th {
-				padding: 3px 5px;
-				font-weight: normal;
 			}
 		}
 	}
