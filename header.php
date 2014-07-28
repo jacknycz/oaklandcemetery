@@ -62,7 +62,7 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/hoverIntent.js" type="text/javascript"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/superfish.js" type="text/javascript"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.meanmenu.js" type="text/javascript"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.flexslider.js" type="text/javascript"></script>
+	<?php if( is_front_page() ) { ?><script src="<?php echo get_template_directory_uri(); ?>/js/jquery.flexslider.js" type="text/javascript"></script><?php } ?>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/default.js" type="text/javascript"></script>
 	<!--[if lte IE 9]>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/respond.js" type="text/javascript"></script>
