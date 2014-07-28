@@ -61,3 +61,18 @@ $(function() {
 		});
 	}
 });
+
+/* MeanMenu */
+jQuery(document).ready(function () {
+    jQuery('nav#nav').meanmenu();
+});
+
+/* FlexSlider */
+jQuery(window).load(function(){
+  jQuery('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    prevText: "‹",           
+	nextText: "›", 
+  });
+});

@@ -67,22 +67,6 @@
 	<!--[if lte IE 9]>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/respond.js" type="text/javascript"></script>
 	<![endif]-->
-	<script>
-	jQuery(document).ready(function () {
-	    jQuery('nav#nav').meanmenu();
-	});
-	</script>
-	
-	<script>
-	jQuery(window).load(function(){
-      jQuery('.flexslider').flexslider({
-        animation: "slide",
-        controlNav: false,
-        prevText: "‹",           
-		nextText: "›", 
-      });
-    });
-    </script>
 
 	<!--[if lt IE 9]>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
