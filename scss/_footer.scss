@@ -1,0 +1,68 @@
+#footer {
+	background: #f7f7f7;
+	background: url('../images/footer_bg.png') no-repeat center;
+	padding: 1.5em 0;
+	height: 226px;
+	margin-top: 30px;
+	
+	.logo {
+		float: left;
+		margin-right: 15px;
+		
+		a {
+			width: 67px;
+			height: 80px;
+			display: block;
+			background: url('../images/footer_logo.png') no-repeat;
+			text-indent: -99999em;
+		}
+	}
+	.links {
+		font-weight: bold;
+		float: left;
+		
+		ul {
+			margin: 20px 0;
+			@extend %clearfix;
+			
+			li {
+				list-style: none;
+				border-right: 1px solid #333;
+				height: 11px;
+				margin-right: 5px;
+				float: left;
+				line-height: 8px;
+				
+				a {
+					color: #333;
+					text-transform: lowercase;
+					padding-right: 5px;
+					font-size: 12px;
+				}
+			}
+		}
+		@include breakpoint(tablet) {
+			float: left;
+		}
+	}
+	.site-info {
+		margin: 5px 0 0;
+		float: left;
+		font-weight: bold;
+		font-size: 12px;
+		
+		a {
+			color: #333;
+		}
+		@include breakpoint(tablet) {
+			.copyright {
+				float: left;
+				width: 45%;
+			}
+			.photos {
+				float: right;
+				width: 45%;
+			}
+		}
+	}
+}

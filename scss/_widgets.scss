@@ -1,0 +1,103 @@
+/*--------------------------------------------------------------
+9.0 Widgets
+--------------------------------------------------------------*/
+
+.widget {
+	margin: 0 0 1.5em;
+	
+	.widget-title {
+		background: url('../images/spr_sidebar_headers.png') no-repeat;
+		margin: 0 0 5px;
+		height: 28px;
+		line-height: 28px;
+		padding-left: 35px;
+		text-transform: uppercase;
+		text-shadow: 0 1px #000;
+		color: #fff;
+		font-size: 14px;
+		
+		@include breakpoint(desktop) {
+			font-size: 18px;
+		}
+		&.divider {
+			display: none;
+		}
+	}
+	.widget-content {
+		padding: 10px;
+		background: #c7d1cf;
+		zoom: 1;
+		overflow: hidden;
+		@extend %clearfix;
+		
+		&.divider {
+			width: 115px;
+			height: 23px;
+			margin: 0 auto;
+			padding: 0;
+			background: url('../images/spr_divider.png') repeat-x;
+		}
+		
+		/* Twitter */
+		.twitter_update_list {
+			margin: 0 0 10px;
+			padding: 10px;
+			background: #eeeeee;
+			list-style: none;
+			font-size: 12px;
+		}
+		.follow-link {
+			@extend .button;
+			float: right;
+			margin: 3px 0;
+		}
+		
+		/* Recommendations */
+		#TA_excellent652 {
+			background-color: #fff;
+			text-align: center;
+		}
+		#CDSWIDEXC {
+			background-color: #fff;
+			text-align: center;
+			width: 100%;
+			border: none;
+			margin: 0;
+			padding: 5px 0;
+			
+			img {
+				margin: 0 auto;
+			}
+		}
+		
+		/* Email */
+		#mc_embed_signup {
+			h2 {
+				font-size: 12px;
+			}	
+			.button {
+				@include rounded(0);
+			}
+			input {
+				max-width: 100% !important;
+			}
+		} 
+	}
+
+	/* Make sure select elements fit in widgets */
+	select {
+		max-width: 100%;
+	}
+}
+
+@include breakpoint(lt-tablet) {
+	#secondary {
+		display: none;
+	}
+}
+
+/* Search widget */
+
+.widget_search .search-submit {
+	display: none;
+}

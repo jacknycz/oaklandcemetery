@@ -1,0 +1,61 @@
+#page-oakland-cemetery {
+	.homepage_hero {
+		@extend %clearfix;
+	}
+	.entry-header {
+		background-image: url('../images/homepage_content_header.png');
+		background-color: none;
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: 120%;
+		height: 70px;
+		text-indent: -9999px;
+		.entry-title {
+			display: none;
+		}
+		
+		@include breakpoint(tablet) {
+			background-size: contain;
+			height: 75px;
+		}
+	}
+	#header_image {
+		display: none;
+	}
+	
+	/* Special Announcements */
+	.special-announcements {
+		margin: 20px 0 0;
+		
+		li {
+			list-style: none;
+			padding: 0 0 10px;
+			margin: 0 0 10px;
+			border-bottom: solid 1px #bfbab6;
+			@extend %clearfix;
+			
+			&:last-child {
+				border: none;
+			}
+			strong {
+				display: block;
+				margin-bottom: 3px;
+			}
+			a {
+				display: block;
+				font-weight: bold;
+				margin-top: 3px;
+				color: $green;
+			}
+		}
+	}
+	
+	/* Events */
+	.events {
+		tr {
+			&:first-child {
+				display: none;
+			}
+		}
+	}
+}

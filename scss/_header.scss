@@ -1,0 +1,111 @@
+#header {
+	background: url(../images/header_bg.png) center bottom repeat-x;
+	position: relative;
+	@extend %clearfix;
+	
+	.container {
+		position: relative;
+		height: 70px;
+		
+		@include breakpoint(tablet) {
+			height: 133px;
+		}
+	}
+	#site-title {
+		float: left;
+		position: absolute;
+		z-index: 99;
+		
+		a {
+			display: block;
+			overflow: hidden;
+			margin-left: 20px;
+			background: url(../images/header_logo.png) center center no-repeat;	
+			background-size: cover;
+			text-indent: -9999px;
+			@include box-shadow(0,0,15px,rgba(0,0,0,.2));
+			width: 92px;
+			height: 85px;
+			
+			@include breakpoint(tablet) {
+				width: 184px;
+				height: 170px;
+			}
+		}
+	}
+	#site-description {
+		display: none;
+	}
+	.donate {
+		display: none;
+	}
+	
+	/* Top Bar */
+	.top-bar {
+		display: block;
+		.search,
+		.home {
+			@include gradient(#6d7d79, $green);
+			padding: 3px 5px;
+		}
+		
+		.search {
+			float: left;
+			margin-right: 5px;
+			height: 30px;
+			
+			input[type="text"] {
+				border: none;
+				height: 20px;
+				position: relative;
+				width: 70px;
+				top: -3px;
+				@include rounded(3px);
+				@include transition();
+				@include box-shadow(0,0,0,0);
+				height: 21px;
+				line-height: 15px;
+				font-size: 12px;
+				
+				&:focus {
+					width: 150px;
+					@include box-shadow(0,0,0,0);
+				}
+			}
+			input[type="submit"] {
+				width: 27px;
+				height: 24px;
+				background: url('../images/spr_icons.png') no-repeat -29px -68px;
+				text-indent: -9999px;
+				border: none;
+				@include box-shadow(0,0,5px,rgba(255,255,255,.2),true);	
+				@include rounded(3px);
+			}
+		}
+		.home {
+			float: right;
+			
+			a {
+				background: url('../images/spr_icons.png') no-repeat -29px -92px;
+				text-indent: -99999em;
+				display: block;
+				width: 27px;
+				height: 24px;
+				@include rounded(3px);
+			}
+		}
+	}
+	
+	@include breakpoint(desktop) {
+		.donate {
+			display: block;
+			position: absolute;
+			bottom: 7px;
+			right: 0;
+		}
+	}
+}
+
+#header_image {
+	margin-bottom: 20px;
+}
